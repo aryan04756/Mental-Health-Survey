@@ -60,7 +60,7 @@ class MentalHealthSurvey extends Component {
     };
   
     try {
-      const response = await fetch('/submitFormData', {
+      const response = await fetch('http://localhost:5000/submitFormData', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -70,6 +70,28 @@ class MentalHealthSurvey extends Component {
   
       if (response.ok) {
         console.log('Form data saved successfully.');
+        this.setState({
+          question1: '',
+          question2: '',
+          question3: '',
+          question4: '',
+          question5: '',
+          question6: '',
+          question7: '',
+          question8: '',
+          question9: '',
+          question10: '',
+          question1_description: '',
+          question2_description: '',
+          question3_description: '',
+          question4_description: '',
+          question5_description: '',
+          question6_description: '',
+          question7_description: '',
+          question8_description: '',
+          question9_description: '',
+          question10_description: '',
+        })
         // You can reset the form or perform any other actions here.
       } else {
         console.error('Form data saving failed.');
@@ -79,7 +101,6 @@ class MentalHealthSurvey extends Component {
     }
   }
   
-
   render() {
     return (
       <div className="container">
