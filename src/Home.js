@@ -114,13 +114,20 @@ function App() {
       <div className='text-carousel-container'>
         <TextCarousel textItems={textItems} />
       </div>
-      <div class="card">
-  <div class="card-body">
-    <h5 class="card-title">Importance of Mental Health</h5>
-    <p class="fit-to-page-card-text">Mental health is of paramount importance as it profoundly affects one's overall well-being and quality of life. It influences how we think, feel, and act, shaping our ability to cope with stress, build meaningful relationships, work productively, and make informed decisions. Prioritizing mental health fosters resilience, emotional stability, and a positive outlook, enabling individuals to lead fulfilling and productive lives. It's a cornerstone of overall health, and neglecting it can have far-reaching consequences for individuals, families, and communities.</p>
-    <a href="#" class="btn btn-primary">Click to assess you mental health</a>
+      <div className="card">
+  <div className="card-body">
+    <h5 className="card-title">Importance of Mental Health</h5>
+    <p className="fit-to-page-card-text">Mental health is of paramount importance as it profoundly affects one's overall well-being and quality of life. It influences how we think, feel, and act, shaping our ability to cope with stress, build meaningful relationships, work productively, and make informed decisions. Prioritizing mental health fosters resilience, emotional stability, and a positive outlook, enabling individuals to lead fulfilling and productive lives. It's a cornerstone of overall health, and neglecting it can have far-reaching consequences for individuals, families, and communities.</p>
+    
   </div>
 </div>
+<div className='card1'>
+<div className="card-body1">
+    <h6 className="card-title1">Why Mental Health?</h6>
+    <p className='fit-to-page-card-text1'>Mental health refers to our emotional, psychological, and social well-being. It encompasses our thoughts, feelings, and behaviors and is essential for leading a fulfilling life. Good mental health contributes to effective functioning, healthy relationships, and overall life satisfaction. However, mental health issues, such as anxiety, depression, and stress, can impact anyone and should be taken seriously. Seeking help and support, practicing self-care, and reducing stigma around mental health are crucial steps in promoting well-being and ensuring that everyone has the opportunity to thrive mentally and emotionally.</p>
+    <a href="/form" className="btn btn-primary">Click to assess you mental health</a>
+    </div>
+    </div>
     </div>
   );
 }
