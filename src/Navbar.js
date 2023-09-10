@@ -28,6 +28,7 @@ const CollapsibleNavbar = () => {
           <Link to="Disorders"  style={navLinkStyle}>Disorders</Link>
           <Link to="Disorders"  style={navLinkStyle}>Report</Link>
           <Link to="Feedback"  style={navLinkStyle}>Feedback</Link>
+          <Link to="Chatbot"  style={navLinkStyle}>Chatbot</Link>
         </Nav>
       </Navbar.Collapse>
       

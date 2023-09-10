@@ -252,7 +252,7 @@ class MentalHealthSurvey extends Component {
             </div>
 
           <div className="submit-button">
-            <button type="submit">Submit</button>
+            <button onClick={this.handleSubmit} type="submit">Submit</button>
           </div>
         </form>
       </div>

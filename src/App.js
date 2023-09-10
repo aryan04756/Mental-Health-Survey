@@ -6,6 +6,7 @@ import Disorders from './Disorders';
 import MentalHealthSurvey from './form';
 import OurTeamPage from './OurTeamPage';
 import Feedback from './Feedback';
+import Chatbot from './Chatbot';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="Form" element={<MentalHealthSurvey/>}/>
       <Route path="OurTeamPage" element={<OurTeamPage/>}/>
       <Route path="Feedback" element={<Feedback/>}/>
+      <Route path='Chatbot' element={<Chatbot/>}/>
     </Routes>
 
 </>
