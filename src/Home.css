@@ -137,6 +137,16 @@
     height: 75%;
   }
   
+  .chatbot-button {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 9999;
+    
+  }
+  .btn-primary1{
+    background-color: blue;
+    border-radius: 50%;
+    border:0;
+  }
   /* Add additional styling as needed */
-  
-  
