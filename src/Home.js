@@ -138,19 +138,17 @@ function App() {
     <p className='fit-to-page-card-text1'>Mental health refers to our emotional, psychological, and social well-being. It encompasses our thoughts, feelings, and behaviors and is essential for leading a fulfilling life. Good mental health contributes to effective functioning, healthy relationships, and overall life satisfaction. However, mental health issues, such as anxiety, depression, and stress, can impact anyone and should be taken seriously. Seeking help and support, practicing self-care, and reducing stigma around mental health are crucial steps in promoting well-being and ensuring that everyone has the opportunity to thrive mentally and emotionally.</p>
     <a href="/form" className="btn btn-primary">Click to assess you mental health</a>
     </div>
-    
-    
-
-    
-
     </div>
     <div className='chatbot-button'>
         <button onClick={toggleChatbot} className="btn btn-primary1">
           {chatbotVisible ? 'Close Chatbot' : 'Open Chatbot'}
         </button>
       </div>
-      {chatbotVisible && <Chatbot />}
-    </div>
+      {chatbotVisible && (
+        <Chatbot onClose={toggleChatbot} />
+      )}
+      </div>
+
   );
 }
 
