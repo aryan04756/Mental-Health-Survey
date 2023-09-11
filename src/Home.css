@@ -84,9 +84,13 @@
     justify-content: flex-start; /* Start with content aligned to the left */
     transition: transform 0.5s ease;
     overflow: hidden; /* Hide the overflowing content */
-    background-color:rgb(180, 180, 180);
+    background-color: #AEC3AE;
     margin: 0px;
     padding: 0px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.2px;
+    
+    
   }
   
   .text-carousel-button {
@@ -128,7 +132,9 @@
   .text-carousel-content {
     flex: 0 0 auto;
     width: 100%;
-    font-size: 36px; /* Adjust the width as needed */
+    font-size: 30px;
+ 
+    font-family: "Times New Roman", Times, serif; /* Adjust the width as needed */
   }
 
   .text-carousel-button:hover {
