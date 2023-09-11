@@ -104,7 +104,7 @@ function MentalHealthSurvey() {
           question13_description: '',
         });
 
-        navigate('/');
+        navigate('/Report');
         // You can reset the form or perform any other actions here.
       } else {
         console.error('Form data saving failed.');
