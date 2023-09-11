@@ -9,6 +9,11 @@ const port = process.env.PORT || 5000;
 // Middleware to parse JSON
 app.use(bodyParser.json());
 app.use(cors());
+app.use('/login', (req, res) => {
+  res.send({
+    token: 'test123'
+  });
+});
 const corsOptions = {
   origin: 'http://localhost:3000', // Replace with the origin(s) you want to allow
 };

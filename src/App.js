@@ -7,8 +7,18 @@ import MentalHealthSurvey from './form';
 import OurTeamPage from './OurTeamPage';
 import Feedback from './Feedback';
 import Chatbot from './Chatbot';
+import Login from './Login';
+import useToken from './useToken';
+
+
 
 function App() {
+  const { token, setToken } = useToken();
+  
+
+  if(!token) {
+    return <Login setToken={setToken} />
+  }
   return (
     <>
        <Navbar/>
