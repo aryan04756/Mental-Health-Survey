@@ -4,7 +4,8 @@ const TeamMember = ({ name, image, description }) => {
     const imageSize = {
         width: '150px', // Adjust the width and height as needed
         height: '150px',
-        borderRadius: '50%', // Makes the image circular
+        borderRadius: '50%',
+        padding: '10px' // Makes the image circular
       };
       const containerStyle = {
         display: 'flex',        // Make the elements flex containers

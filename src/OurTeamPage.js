@@ -1,5 +1,6 @@
 import React from 'react';
 import TeamMember from './TeamMember'
+import { alignPropType } from 'react-bootstrap/esm/types';
 // Adjust the import path based on your project structure
 
 const teamData = [
@@ -37,12 +38,20 @@ const teamData = [
 
 const OurTeamPage = () => {
   const h1Style = {
-    fontSize: '36px', // Adjust the font size as needed
+    fontSize: '36px',
+    fontFamily: 'Comic Sans MS, sans-serif',
+    color: '#FE7F2D',
+    margintop: '20px'
+    };
+  
+  const content = {
+    fontFamily: 'Comic Sans MS, sans-serif',
+    color: '#265454'
   };
   return (
     <div className="our-team-page">
-      <h1 style={h1Style}>Our Team</h1>
-      <div className="team-members">
+      <h1 style={h1Style}><strong>Our Team</strong></h1>
+      <div className="team-members" style={content} > 
         {teamData.map((member) => (
           <TeamMember
             key={member.name}
