@@ -2,8 +2,8 @@ import React from 'react';
 
 const TeamMember = ({ name, image, description }) => {
     const imageSize = {
-        width: '150px', // Adjust the width and height as needed
-        height: '150px',
+        width: '200px', // Adjust the width and height as needed
+        height: '200px',
         borderRadius: '50%',
         padding: '10px' // Makes the image circular
       };
