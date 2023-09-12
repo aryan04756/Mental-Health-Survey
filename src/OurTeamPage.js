@@ -38,15 +38,18 @@ const teamData = [
 
 const OurTeamPage = () => {
   const h1Style = {
-    fontSize: '36px',
-    fontFamily: 'Comic Sans MS, sans-serif',
-    color: '#FE7F2D',
+    fontSize: '50px',
+    fontFamily: "Times New Roman", 
+    color: '#5C5470',
     margintop: '20px'
+  
     };
   
   const content = {
-    fontFamily: 'Comic Sans MS, sans-serif',
+    fontFamily: "Times New Roman",
+    fontSize: '18px',
     color: '#265454'
+  
   };
   return (
     <div className="our-team-page">

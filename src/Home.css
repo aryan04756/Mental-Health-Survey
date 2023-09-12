@@ -63,6 +63,7 @@
   background-position: center;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add transform transition */
   opacity: 1; /* Show all slides initially */
+  width: 50%;
 }
 
 
