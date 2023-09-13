@@ -63,7 +63,7 @@
   background-position: center;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add transform transition */
   opacity: 1; /* Show all slides initially */
-  width: 50%;
+
 }
 
 
@@ -85,7 +85,7 @@
     justify-content: flex-start; /* Start with content aligned to the left */
     transition: transform 0.5s ease;
     overflow: hidden; /* Hide the overflowing content */
-    background-color: #AEC3AE;
+    background-color: #F8E8EE;
     margin: 0px;
     padding: 0px;
     font-family: "Times New Roman", Times, serif;

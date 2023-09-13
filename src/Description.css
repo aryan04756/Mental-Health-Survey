@@ -1,7 +1,8 @@
 .card {
-    margin: 0px;
+    margin: 10px;
     border: Transparent;
-    background-color: #E4E4D0;
+    background-color: #FDCEDF;
+    border-radius: 10%;
 }
 .card-text {
     padding-left: 75px;
@@ -21,10 +22,12 @@
 
 }
 .card1 {
-    margin: 0px;
+    margin: 10px;
     border: Transparent;
-    background-color: #FFEEF4;
+    background-color: #F2BED1;
     font-family: "Times New Roman", Times, serif;
+    border-radius: 10%;
+    max-height: 500px;
 }
 .card-text1 {
     padding-left: 75px;

@@ -4,10 +4,10 @@ import './Description.css';
 import Chatbot from './Chatbot';
 
 // Import your images
-import img1 from '../src/images/Mental-Healthimg1.jpg';
-import img2 from '../src/images/Mental-Healthimg2.jpg';
-import img3 from '../src/images/Mental-Healthimg3.jpg';
-import img4 from '../src/images/Mental-Healthimg4.png';
+import img1 from '../src/images/image1.jpg';
+import img2 from '../src/images/image2.jpg';
+import img3 from '../src/images/image3.jpg';
+import img4 from '../src/images/image4.jpg';
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +45,7 @@ const Carousel = ({ images }) => {
         style={{
           backgroundImage: `url(${images[currentIndex]})`,
           backgroundSize: '100% 75%',
-          backgroundColor: '#94A684',
+          backgroundColor: '#F9F5F6',
         }}
       ></div>
       <button onClick={nextSlide} className="carousel-button next">
@@ -125,20 +125,31 @@ function App() {
       <div className='text-carousel-container'>
         <TextCarousel textItems={textItems} />
       </div>
-      <div className="card">
-  <div className="card-body">
-    <h5 className="card-title">Importance of Mental Health</h5>
-    <p className="card-text">Mental health is of paramount importance as it profoundly affects one's overall well-being and quality of life. It influences how we think, feel, and act, shaping our ability to cope with stress, build meaningful relationships, work productively, and make informed decisions. Prioritizing mental health fosters resilience, emotional stability, and a positive outlook, enabling individuals to lead fulfilling and productive lives. It's a cornerstone of overall health, and neglecting it can have far-reaching consequences for individuals, families, and communities.</p>
-    
-  </div>
-</div>
-<div className='card1'>
-<div className="card-body1">
-    <h6 className="card-title1">Why Mental Health?</h6>
-    <p className='card-text1'>Mental health refers to our emotional, psychological, and social well-being. It encompasses our thoughts, feelings, and behaviors and is essential for leading a fulfilling life. Good mental health contributes to effective functioning, healthy relationships, and overall life satisfaction. However, mental health issues, such as anxiety, depression, and stress, can impact anyone and should be taken seriously. Seeking help and support, practicing self-care, and reducing stigma around mental health are crucial steps in promoting well-being and ensuring that everyone has the opportunity to thrive mentally and emotionally.</p>
-    <a href="/form" className="btn btn-success">Click to assess you mental health</a>
-    </div>
-    </div>
+      <div className="fit-to-page-container">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Importance of Mental Health</h5>
+                <p className="card-text">
+                  Mental health is of paramount importance as it profoundly affects one's overall well-being and quality of life. It influences how we think, feel, and act, shaping our ability to cope with stress, build meaningful relationships, work productively, and make informed decisions. Prioritizing mental health fosters resilience, emotional stability, and a positive outlook, enabling individuals to lead fulfilling and productive lives. It's a cornerstone of overall health, and neglecting it can have far-reaching consequences for individuals, families, and communities. Neglecting it can have far-reaching consequences.                                              
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="card">
+              <div className="card-body">
+                <h6 className="card-title">Why Mental Health?</h6>
+                <p className='card-text'>Mental health refers to our emotional, psychological, and social well-being. It encompasses our thoughts, feelings, and behaviors and is essential for leading a fulfilling life. Good mental health contributes to effective functioning, healthy relationships, and overall life satisfaction. However, mental health issues, such as anxiety, depression, and stress, can impact anyone and should be taken seriously. Seeking help and support, practicing self-care, and reducing stigma around mental health are crucial steps in promoting well-being and ensuring that everyone has the opportunity to thrive mentally and emotionally.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+      <a href="/form" className="btn btn-success m-3">Click to assess your mental health</a>
+      </div>
     <div className='chatbot-button'>
         <button onClick={toggleChatbot} className="btn btn-success">
           {chatbotVisible ? 'Close Chatbot' : 'Open Chatbot'}
