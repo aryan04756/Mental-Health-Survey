@@ -8,6 +8,9 @@ import img1 from '../src/images/Mental-Healthimg1.jpg';
 import img2 from '../src/images/Mental-Healthimg2.jpg';
 import img3 from '../src/images/Mental-Healthimg3.jpg';
 import img4 from '../src/images/Mental-Healthimg4.png';
+import { useNavigate } from 'react-router';
+
+
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -97,9 +100,26 @@ const TextCarousel = ({ textItems }) => {
     </div>
   );
 };
+const Homepage = ({ setLoginUser }) => {
+  const navigate=useNavigate();
+  const handleLogout = () => {
+    // Clear the logged-in user by passing null to setLoginUser
+    setLoginUser(null);
+    navigate("/login");
+  };
+
+  return (
+    <div className="homepage">
+      <div className="button" onClick={handleLogout}>
+        Logout
+      </div>
+    </div>
+  );
+};
 
 function App() {
   const [chatbotVisible, setChatbotVisible] = useState(false);
+  const [loginUser, setLoginUser] = useState();
 
   const openChatbot = () => {
     setChatbotVisible(true);
@@ -107,6 +127,7 @@ function App() {
   const toggleChatbot = () => {
     setChatbotVisible(!chatbotVisible);
   };
+
   // Use the imported image paths
   const images = [img1, img2, img3, img4];
 
@@ -119,6 +140,8 @@ function App() {
   ]
   return (
     <div className="App">
+      <Homepage setLoginUser={setLoginUser} />
+
       <div className="carousel-container">
         <Carousel images={images} />
       </div>
@@ -146,6 +169,7 @@ function App() {
       </div>
       {chatbotVisible && (
         <Chatbot onClose={toggleChatbot} />
+    
       )}
       </div>
 

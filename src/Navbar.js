@@ -2,7 +2,9 @@
 import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
+
+
 
 const CollapsibleNavbar = () => {
   const [expanded, setExpanded] = useState(false);
