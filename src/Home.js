@@ -4,20 +4,14 @@ import './Description.css';
 import Chatbot from './Chatbot';
 
 // Import your images
-<<<<<<< HEAD
 import img1 from '../src/images/image1.jpg';
 import img2 from '../src/images/image2.jpg';
 import img3 from '../src/images/image3.jpg';
 import img4 from '../src/images/image4.jpg';
-=======
-import img1 from '../src/images/Mental-Healthimg1.jpg';
-import img2 from '../src/images/Mental-Healthimg2.jpg';
-import img3 from '../src/images/Mental-Healthimg3.jpg';
-import img4 from '../src/images/Mental-Healthimg4.png';
+
 import { useNavigate } from 'react-router';
 
 
->>>>>>> 6786fc8aad8c04bffc46df1a0d01ba1e442b69c1
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -117,7 +111,7 @@ const Homepage = ({ setLoginUser }) => {
 
   return (
     <div className="homepage">
-      <div className="button" onClick={handleLogout}>
+      <div className="logout-button" onClick={handleLogout}>
         Logout
       </div>
     </div>
@@ -162,7 +156,7 @@ function App() {
               <div className="card-body">
                 <h5 className="card-title">Importance of Mental Health</h5>
                 <p className="card-text">
-                  Mental health is of paramount importance as it profoundly affects one's overall well-being and quality of life. It influences how we think, feel, and act, shaping our ability to cope with stress, build meaningful relationships, work productively, and make informed decisions. Prioritizing mental health fosters resilience, emotional stability, and a positive outlook, enabling individuals to lead fulfilling and productive lives. It's a cornerstone of overall health, and neglecting it can have far-reaching consequences for individuals, families, and communities. Neglecting it can have far-reaching consequences.                                              
+                  Mental health is of paramount importance as it profoundly affects one's overall well-being and quality of life. It influences how we think, feel, and act, shaping our ability to cope with stress, build meaningful relationships, work productively, and make informed decisions. Prioritizing mental health fosters resilience, emotional stability, and a positive outlook, enabling individuals to lead fulfilling and productive lives. It's a cornerstone of overall health, and neglecting it can have far-reaching consequences for individuals, families, and communities. Neglecting it can have far-reaching consequences. Keep faith in yourself and move forward in life                                             
                 </p>
               </div>
             </div>
@@ -180,6 +174,7 @@ function App() {
       <div>
       <a href="/form" className="btn btn-success m-3">Click to assess your mental health</a>
       </div>
+      
     <div className='chatbot-button'>
         <button onClick={toggleChatbot} className="btn btn-success">
           {chatbotVisible ? 'Close Chatbot' : 'Open Chatbot'}

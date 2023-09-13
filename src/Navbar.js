@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Link,useNavigate } from 'react-router-dom';
 
+import logo from '../src/images/logo.png'
 
 
 const CollapsibleNavbar = () => {
@@ -20,8 +21,9 @@ const CollapsibleNavbar = () => {
   };
   return (
     <Navbar bg="dark" variant="dark" expand="lg" expanded={expanded}>
-      <Navbar.Brand href="#" style={navLinkStyle}>Your Logo</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar} />
+<Link to="/">
+        <img src={logo} alt="Logo" style={{ maxHeight: '50px' }} /> {/* Use the img tag for the logo */}
+      </Link>      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar} />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Link to="/"  style={navLinkStyle}>Home</Link>
@@ -30,7 +32,6 @@ const CollapsibleNavbar = () => {
           <Link to="Disorders"  style={navLinkStyle}>Disorders</Link>
           <Link to="Report"  style={navLinkStyle}>Report</Link>
           <Link to="Feedback"  style={navLinkStyle}>Feedback</Link>
-          <Link to="Chatbot"  style={navLinkStyle}>Chatbot</Link>
         </Nav>
       </Navbar.Collapse>
       

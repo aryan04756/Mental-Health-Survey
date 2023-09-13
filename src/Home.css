@@ -11,6 +11,7 @@
     border-radius: 8px;
     outline: none;
     cursor: pointer;
+    position:relative
 }
 
 /* Navigation buttons */
@@ -166,5 +167,21 @@
     background-color: blue;
     border-radius: 50%;
     border:0;
+  }
+  .logout-button {
+    align-items: center;
+    position: absolute;
+    top: 20px; /* Adjust this value to position the button vertically */
+    right: 10px; /* Adjust this value to position the button horizontally */
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #ff0000; /* You can choose the background color you like */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .logout-button:hover {
+    background-color: #cc0000; /* Color change on hover */
   }
   /* Add additional styling as needed */
