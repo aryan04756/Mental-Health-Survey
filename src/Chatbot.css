@@ -1,18 +1,16 @@
 /* ChatbotPopup.css */
-.body{
-  background: linear-gradient(to bottom, #007bff, #003f7f);
-}
+
 .chatbot-popup {
+    border-radius: 0px;
+    border: 0px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
     width: 400px;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     z-index: 999;
-    background: linear-gradient(to bottom, #007bff, #003f7f);
+    frameBorder: 0px;
   }
   
   .close-chatbot-button {

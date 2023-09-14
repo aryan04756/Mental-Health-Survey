@@ -171,9 +171,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div>
-      <a href="/form" className="btn btn-success m-3">Click to assess your mental health</a>
-      </div>
+     
       
     <div className='chatbot-button'>
         <button onClick={toggleChatbot} className="btn btn-success">

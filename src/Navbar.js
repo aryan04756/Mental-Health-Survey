@@ -28,7 +28,6 @@ const CollapsibleNavbar = () => {
         <Nav className="mr-auto">
           <Link to="/"  style={navLinkStyle}>Home</Link>
           <Link to="OurTeamPage"  style={navLinkStyle}>Team</Link>
-          <Link to="form"  style={navLinkStyle}>Form</Link>
           <Link to="Disorders"  style={navLinkStyle}>Disorders</Link>
           <Link to="Report"  style={navLinkStyle}>Report</Link>
           <Link to="Feedback"  style={navLinkStyle}>Feedback</Link>
