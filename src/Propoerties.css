@@ -1,0 +1,43 @@
+.chatbot {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.Home {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: italics;
+    align-items: center;
+    color: white;
+}
+.Navbar {
+    display: flex;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Adjust button width as needed */
+    height: 50px; /* Adjust button height as needed */
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+    transition: background-color 0.3s ease-in-out;
+  }
