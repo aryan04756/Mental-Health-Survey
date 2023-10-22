@@ -9,8 +9,8 @@ import OurTeamPage from './OurTeamPage';
 import Feedback from './Feedback';
 import Chatbot from './Chatbot';
 import Login from './Login';
-
 import Register from './Register';
+import MentalHealthSurvey from './form';
 
 function App() {
   const [user, setLoginUser] = useState({});
@@ -22,9 +22,11 @@ function App() {
         <Route path="/" element={user && user._id ? <Home setLoginUser={setLoginUser} /> : <Login setLoginUser={setLoginUser} />} />
         <Route path="/login" element={<Login setLoginUser={setLoginUser} />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/disorders" element={<Disorders />} />S
+        <Route path="/disorders" element={<Disorders />} />
         <Route path="/ourteampage" element={<OurTeamPage />} />
+        <Route path='/form' element={<MentalHealthSurvey />} />
         <Route path="/feedback" element={<Feedback />} />
+        <Route path="/disorders" element={<Disorders />} />
         <Route path="/chatbot" element={<Chatbot />} />
       </Routes>
     </>

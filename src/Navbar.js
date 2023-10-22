@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Link,useNavigate } from 'react-router-dom';
-
 import logo from '../src/images/logo.png'
 
 
@@ -29,6 +28,7 @@ const CollapsibleNavbar = () => {
           <Link to="/"  style={navLinkStyle}>Home</Link>
           <Link to="OurTeamPage"  style={navLinkStyle}>Team</Link>
           <Link to="Disorders"  style={navLinkStyle}>Disorders</Link>
+          <Link to="Form" style={navLinkStyle}>Form</Link>
           <Link to="Report"  style={navLinkStyle}>Report</Link>
           <Link to="Feedback"  style={navLinkStyle}>Feedback</Link>
         </Nav>
